@@ -388,6 +388,13 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.inner2{
+		display: flex;
+		padding: 100px;
+
+	}
+
+
 /* Row */
 
 	.row {
