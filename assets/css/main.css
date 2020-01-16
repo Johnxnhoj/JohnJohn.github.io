@@ -71,7 +71,24 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
+/* typing */
+.Name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  animation: type 5s steps(63);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 63ch;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 63ch;
+  }
+}
 /* Basic */
 
 	@-ms-viewport {
@@ -99,11 +116,14 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		
+		background-image: linear-gradient(to top, rgba(32, 36, 87, 0.938), rgba(65, 91, 121, 0.507)), url("../../images/4k picture of vegas.jpg");
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2409,7 +2429,7 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 5px;
+		border-radius: 50%;
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -3464,8 +3484,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3572,10 +3594,12 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
+			background-color: #2e3141fb;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3585,8 +3609,10 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3600,7 +3626,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -3791,6 +3818,7 @@ input, select, textarea {
 				border-radius: 100%;
 				margin: 0 3em 2em 0;
 				width: 22em;
+				
 				overflow: hidden;
 				-ms-flex: 1;
 			}
@@ -3996,7 +4024,16 @@ input, select, textarea {
 		}
 
 /* Footer */
-
+  #footer .inner{
+		background: rgba(40, 44, 59, 0.829);
+		border-radius: 20px; 
+	}
+	#footer .inner .major{
+		margin: 10px 100px;
+	}
+	#footer .inner .contact{
+		margin: 10px 100px;
+	}
 	#footer .inner {
 		padding: 5em 0 3em 0 ;
 		display: -moz-flex;
@@ -4062,8 +4099,10 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4142,3 +4181,23 @@ input, select, textarea {
 		}
 
 	}
+	.skills{
+		display: grid; 
+		grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+
+	}
+	.image2 img {
+    border-radius: 10%;
+		width: 175px;
+		height: 175%;
+		margin: 10px;
+		
+		
+}
+
+		
+	
+
+	
+		
+		
