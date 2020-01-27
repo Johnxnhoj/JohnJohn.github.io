@@ -2436,16 +2436,32 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 50%;
-		border: 0;
-		display: inline-block;
+		border-radius: 100%;
+		border: 1px solid rgba(255, 255, 255, 0.253);
+		
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 5px;
+			border-radius: 100%;
+		
 			display: block;
 		}
+		.wrapper.spotlight .image {
+			border-radius: 100%;
+			margin: 0 3em 2em 0;
+			width: 465px;
+			height: 280px;
+			
+			overflow: hidden;
+			-ms-flex: 1;
+		}
+
+			.wrapper.spotlight .image img {
+				border-radius: 100%;
+				width: 100%;
+				height: 100%;
+			}
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -3821,19 +3837,7 @@ input, select, textarea {
 				flex-direction: row;
 			}
 
-			.wrapper.spotlight .image {
-				border-radius: 100%;
-				margin: 0 3em 2em 0;
-				width: 22em;
-				
-				overflow: hidden;
-				-ms-flex: 1;
-			}
-
-				.wrapper.spotlight .image img {
-					border-radius: 100%;
-					width: 100%;
-				}
+		
 
 			.wrapper.spotlight .content {
 				width: 100%;
@@ -4201,6 +4205,7 @@ input, select, textarea {
 		
 		
 }
+
 
 		
 	
